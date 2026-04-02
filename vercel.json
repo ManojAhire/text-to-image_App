@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api-hf",
+      "destination": "https://router.huggingface.co/hf-inference/models/stabilityai/stable-diffusion-xl-base-1.0"
+    }
+  ]
+}
