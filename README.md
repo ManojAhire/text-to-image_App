@@ -1,16 +1,66 @@
-# React + Vite
+# AI Image Generator 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A world-class, modern AI image generation application built with React, Vite, and Hugging Face's Stable Diffusion XL.
 
-Currently, two official plugins are available:
+![AI Image Generator Preview](https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1200)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Premium UI:** "Midnight Stealth" dark theme with high-end glassmorphism and cinematic animations.
+- **AI Powered:** Integrated with Stable Diffusion XL via Hugging Face's Inference Router.
+- **UX Focused:** 
+  - Dynamic rotating loading messages.
+  - Smooth, scale-based fade-in transitions.
+  - Automatic memory management (URL Revocation).
+  - Fully responsive and mobile-optimized.
+- **Secure:** Environment-variable-based token management.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (v18+)
+- A Hugging Face API Token (Free)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ManojAhire/text-to-image_App.git
+   cd text-to-image_App
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the root directory:
+   ```env
+   VITE_HF_TOKEN=your_hugging_face_token_here
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 🌐 Deployment (Vercel)
+
+This project is optimized for Vercel with built-in proxying to bypass CORS.
+
+1. Push your code to GitHub.
+2. Connect your repository to Vercel.
+3. **Important:** Add `VITE_HF_TOKEN` to your Vercel Project Settings > Environment Variables.
+4. Deploy!
+
+## 🛠️ Built With
+
+- [React 19](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Hugging Face Inference API](https://huggingface.co/docs/api-inference/index)
+- [Stable Diffusion XL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
+
+## 📄 License
+
+MIT
